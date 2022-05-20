@@ -1,3 +1,5 @@
+# https://swexpertacademy.com/
+
 T = int(input())
 for take in range(1, T + 1):
     _sum = 0
