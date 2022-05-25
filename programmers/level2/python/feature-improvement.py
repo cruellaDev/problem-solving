@@ -11,14 +11,14 @@ def solution(progresses, speeds):
             wait_for_complete.append(div + 1)
         else:
             wait_for_complete.append(div)
-    기준 = [0, wait_for_complete.pop(0)]
+    marking = [0, wait_for_complete.pop(0)]
     answer = [1]
     while wait_for_complete:
         second = wait_for_complete.pop(0)
-        if second <= 기준[1]:
-            answer[기준[0]] += 1
+        if second <= marking[1]:
+            answer[marking[0]] += 1
         else:
-            기준[0] += 1
+            marking[0] += 1
             answer.append(1)
-            기준[1] = second
+            marking[1] = second
     return answer
