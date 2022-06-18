@@ -42,7 +42,7 @@ def solution3(p, c):
         try:
             p_dict[cp] = p_dict[cp] - 1
         except:
-            return pt
+            return pc
     for key, value in p_dict.items():
         if value > 0:
             return key
